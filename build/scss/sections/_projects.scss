@@ -1,0 +1,185 @@
+#projects {
+    background:#0F6565;
+
+    .section-titles {
+        padding: 4rem 0 4rem 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        @media screen and (max-width: $mobile) {
+            padding: 4rem 0 2rem 0;
+        }
+
+        h4 {
+            color: $clr-secondary;
+            letter-spacing: .4rem;
+        }
+
+        h2 {
+            color: white;
+            font-weight: 500;
+            font-size: 2.6rem;
+            text-align: center;
+        }
+    }
+
+
+
+    .projects-cards__container {
+        transition: all .4s ease;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        flex-wrap: wrap;
+        width: 70vw;
+        padding-top: 4rem;
+        padding-bottom: 12rem;
+
+        @media screen and (max-width: $laptop) {
+            width: 80vw;
+        }
+        @media screen and (max-width: $tablet) {
+            width: 95vw;
+        }
+        @media screen and (max-width: $mobile) {
+            width: 90vw;
+            gap: 2rem;
+            padding-bottom: 0;
+        }
+
+        li {
+        transition: all .4s ease;
+        list-style: none;
+
+
+        &:nth-child(even) {
+            transform: translateY(200px);
+            @media screen and (max-width: $mobile) {
+                transform: translateY(0);
+            }
+        }
+
+        .project-card {
+            transition: all .4s ease;
+            width: 25vw;
+            position: relative;
+            overflow: hidden;
+
+            @media screen and (max-width: $laptop) {
+                width: 35vw;
+            }
+            @media screen and (max-width: $tablet) {
+                width: 45vw;
+            }
+            @media screen and (max-width: $mobile) {
+                width: 90vw;
+            }
+
+            &:hover > img {
+                transition: all .4s ease;
+                filter: grayscale(0);
+            }
+            &:hover {
+                transition: all .4s ease;
+                transform: scale(1.02);
+            }
+            &:hover > .project-card__text h3 {
+                transition: all .4s ease;
+                // margin-top: 0;
+                opacity: 1;
+            }
+
+            &:hover > .project-card__text {
+                transition: all .4s ease;
+                // background: $clr-primary-darker;
+                // padding: 2rem 0 2rem 2rem;
+            }
+
+            &:hover > .project-card__text a {
+                transition: all .4s ease;
+                background: $clr-secondary;
+            }
+
+            &:hover > .project-card__text a span {
+                transition: all .4s ease;
+                opacity: 1;
+                transform: translateX(10px);
+            }
+
+            .project-card__text {
+                transition: all .4s ease;
+            }
+
+            img {
+                transition: all .4s ease;
+                display: block;
+                width: 100%;
+                height: 550px;
+                object-fit: cover;
+                object-position: center;
+                @media screen and (max-width: $tablet) {
+                    height: 500px;
+                }
+                @media screen and (max-width: $mobile) {
+                    height: 350px;
+                }
+            }
+
+            h3 {
+                transition: all .4s ease;
+                color: white;
+                opacity: .6;
+                font-size: 2.4rem;
+                font-weight: 400;
+                margin: 2rem 0 .5rem 0;
+                width: 80%;
+                @media screen and (max-width: $tablet) {
+                    font-size: 2rem;
+                }
+            }
+
+            a {
+                transition: all .4s ease;
+                color: white;
+                font-weight: 200;
+                font-size: 1rem;
+                background: teal;
+                text-align: center;
+                margin-top: .5rem;
+                padding: .6rem 1.2rem;
+                display: flex;
+                display: inline-block;
+                border-radius: 30px;
+                align-items: center;
+                @media screen and (max-width: $mobile) {
+                    display: block;
+                    width: 100%;
+                    margin-top: 1rem;
+                }
+            }
+
+            span {
+                transition: all .4s ease;
+                opacity: 0;
+            }
+
+        }
+    }
+    }
+
+
+    ul:hover li {
+        transition: all .4s ease;
+        opacity: .2;
+    }
+
+    ul li:hover {
+        transition: all .4s ease;
+        opacity: 1;
+    }
+
+
+
+}

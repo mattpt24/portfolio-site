@@ -22,8 +22,10 @@
 #picture-text img {
     height:650px;
     width: 450px;
+    border-radius: 5px;
     object-fit: cover;
     object-position: center center;
+    box-shadow: 15px 15px 0 $clr-primary;
 }
 
 
@@ -79,7 +81,7 @@ a {
     padding:1.2rem;
     background: #069292;
     border-radius: 15px;
-    margin: 2rem 0;
+    margin: 1rem 0 3rem 0;
     @media screen and (max-width: $mobile) {
         margin: 1rem 0 2rem 0;
         width: 100%;
