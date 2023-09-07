@@ -1,0 +1,59 @@
+
+.btn__container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem 0 0 0;
+    animation: entrance2 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    opacity: 0;
+    font-weight: 900;
+}
+
+.btn {
+    transition: all .5s ease;
+    padding: 1.2rem 1.8rem;
+    border-radius: 40px;
+    outline: none;
+    font-size: 1rem;
+    cursor: pointer;
+    border: solid 1px;
+}
+
+.btn--dark {
+    transition: all .5s ease;
+    background: #FE546F;
+    border-color: #FE546F;
+    color: white;
+}
+
+
+.btn--light {
+    transition: all .5s ease;
+    background: #00808040;
+    border-color: teal;
+    color: teal;
+    background: none;
+    border-color: white;
+    color: white;
+}
+
+.full-stop {
+    font-size: 2.4rem;
+    font-weight: 900;
+    color: teal;
+}
+
+.btn--dark:hover {
+    transition: all .5s eaae;
+    background: #222;
+    border-color: #222;
+}
+
+.btn--light:hover {
+    transition: all .5s ease;
+    background: $clr-primary-lighter;
+    border-color: $clr-primary-lighter;
+    color: $clr-primary;
+}

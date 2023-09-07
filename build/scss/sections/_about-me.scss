@@ -1,0 +1,188 @@
+/*MAIN CONTAINER*/
+#picture-text {
+    position: relative;
+    background: $clr-primary;
+    padding: 0 0 4rem 0;
+    gap: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*UNCOMMENT TO SWITCH */
+   flex-direction: row-reverse;
+}
+
+
+
+/*IMAGE*/
+#picture-text img {
+    height:650px;
+    width: 450px;
+    object-fit: cover;
+    object-position: center center;
+}
+
+
+
+/*TEXT CONTAINER*/
+.picture-text-content {
+    width: 50ch;
+}
+
+
+/*SMALL HEADING*/
+.picture-text-content h4 {
+    color: $clr-secondary;
+    letter-spacing: .4rem;
+    text-transform: uppercase;
+    font-size: .8rem;
+}
+
+/*BIG HEADING*/
+.picture-text-content h2 {
+    font-size: 2.8rem;
+    margin: 1rem 0;
+    font-weight: 500;
+    color: white;
+}
+
+/*PARAGRAPH TEXT*/
+.picture-text-content p {
+    opacity: .6;
+    font-weight: 300;
+    line-height: 1.6;
+    color: white;
+}
+
+
+a {
+    @media screen and (max-width: $mobile) {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+
+
+
+.skills-container {
+    display: flex;
+    gap: .5rem;
+    width: 90%;
+    flex-wrap: wrap;
+    padding:1.2rem;
+    background: #069292;
+    border-radius: 15px;
+    margin: 2rem 0;
+    @media screen and (max-width: $mobile) {
+        margin: 1rem 0 2rem 0;
+        width: 100%;
+        padding: .8rem;
+    }
+}
+
+.skill {
+    padding: 1rem 1.4rem;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-size: .7rem;
+    letter-spacing: .2rem;
+}
+
+.white {
+    background:none;
+    color: #fff;
+    border: solid 1px #fff;
+}
+
+.red {
+    color: #fff;
+    background:#DC4A25;
+}
+.blue {
+    color: #fff;
+    background:#264de4;
+}
+
+.pink {
+    color: white;
+    background: #C76395;
+}
+
+.yellow {
+    color:#222;
+    background:#F0DB4D;
+}
+
+.light-blue{
+    background: #5ED4F3;
+    color: #222;
+}
+
+.maroon {
+    color: #222 ;
+    background: mediumspringgreen;
+}
+
+.dark {
+    background: #222;
+    color:white;
+}
+
+.dark-blue {
+    color: #2FA3F7;
+    background: #001D34;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*MOBILE*/
+@media screen and (max-width: $tablet) {
+    #picture-text {
+        flex-direction: column;
+        padding: 0 0 4rem 0;
+        gap: 0;
+    }
+    #picture-text img {
+        width: 70vw;
+        height: 300px;
+    }
+    .picture-text-content {
+    width: 70%;
+    padding: 2rem 0 0 0;
+    }
+    .picture-text-content h2 {
+    font-size: 2rem;
+    }
+}
+
+
+
+/*MOBILE*/
+@media screen and (max-width: $mobile) {
+    #picture-text {
+        padding: 2rem 0;
+    }
+    #picture-text img {
+        width: 90vw;
+        height: 300px;
+    }
+    .picture-text-content {
+    width: 90%;
+    padding: 2rem 0 0 0;
+    }
+    .picture-text-content h2 {
+    font-size: 2rem;
+    }
+}
+

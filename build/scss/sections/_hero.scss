@@ -1,0 +1,99 @@
+#hero {
+    padding: 14rem 0 8rem 0;
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        background: rgb(164,209,209);
+    background: linear-gradient(163deg, rgba(164,209,209,1) 50%, rgba(0,128,128,1) 50%);
+    @media screen and (max-width: $mobile) {
+        padding: 6rem 0 0 0;
+        height: 95vh;
+    }
+
+
+    .hero__small-text {
+        color: teal;
+        border-radius: 30px;
+        text-transform: uppercase;
+        letter-spacing: .3rem;
+        font-size: .8rem;
+
+        @media screen and (max-width: $mobile) {
+            letter-spacing: .2rem;
+            width: 90vw;
+            margin: 0 auto;
+            font-size: .6rem;
+            text-align: left;
+        }
+    
+    }
+
+    .hero__title {
+        color: #222;
+        color: white;
+        font-size: 4rem;
+        width: 20ch;
+        font-weight: 500;
+        margin: 2rem auto 1.4rem auto;
+        /*font-family: 'Source Serif 4', serif;*/
+        position: relative;
+        @media screen and (max-width: $tablet) {
+            width: 85vw;
+            font-size: 3rem;
+        }
+        @media screen and (max-width: $mobile) {
+            width: 90vw;
+            font-size: 2.8rem;
+            text-align: left;
+        }
+
+        .typer {
+            animation: typerAnimation .8s infinite;
+            font-weight: 200;
+        }
+    }
+
+
+
+    .hero__subtitle {
+        font-weight: 500;
+        opacity: .7;
+        font-size: 1.2rem;
+        color: white;
+        @media screen and (max-width: $mobile) {
+            width: 90vw;
+            font-size: 1rem;
+            text-align: left;
+        }
+    }
+
+
+    .hero__btn-container {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin-top: 2rem;
+        @media screen and (max-width: $mobile) {
+            width: 100vw;
+            flex-direction: column;
+            gap: .5rem;
+        }
+    }
+}
+
+
+
+
+@keyframes typerAnimation {
+    0% {
+        opacity: 0;
+    }
+    50%{
+        opacity: .5;
+    }
+    100%{
+        opacity: 0;
+    }
+}

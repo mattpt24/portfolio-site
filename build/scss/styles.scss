@@ -1,0 +1,24 @@
+
+
+// BASE
+@import "../scss/base/_defaults";
+@import "../scss/base/_mixins" ;
+@import "../scss/base/_variables";
+
+
+// COMPONENTS
+@import "./components/buttons";
+@import "./components/navbar";
+
+
+// SECTIONS
+@import "./sections/hero";
+@import "./sections/projects";
+@import "./sections/experience";
+@import "./sections/about-me";
+
+
+
+
+
+
