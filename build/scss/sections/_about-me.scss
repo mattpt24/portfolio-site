@@ -9,6 +9,7 @@
     align-items: center;
     /*UNCOMMENT TO SWITCH */
    flex-direction: row-reverse;
+   overflow: hidden;
 }
 
 
@@ -186,3 +187,16 @@ a {
     }
 }
 
+
+
+@keyframes arrowBounce {
+    0% {
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}

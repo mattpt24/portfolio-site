@@ -1,5 +1,6 @@
 #hero {
-    padding: 14rem 0 8rem 0;
+    // padding: 14rem 0 8rem 0;
+    height: 100vh;
     display: flex;
         justify-content: center;
         align-items: center;
@@ -8,7 +9,7 @@
         background: rgb(164,209,209);
     background: linear-gradient(163deg, rgba(164,209,209,1) 50%, rgba(0,128,128,1) 50%);
     @media screen and (max-width: $mobile) {
-        padding: 6rem 0 0 0;
+        padding: 8rem 0 0 0;
         height: 95vh;
     }
 
@@ -19,6 +20,7 @@
         text-transform: uppercase;
         letter-spacing: .3rem;
         font-size: .8rem;
+        margin-top: 4rem;
 
         @media screen and (max-width: $mobile) {
             letter-spacing: .2rem;
@@ -81,9 +83,31 @@
             gap: .5rem;
         }
     }
+
+
+    .down-arrow {
+        color: white;
+        font-size: 2rem;
+        opacity: .5;
+        margin-top: 2rem;
+        animation: arrowBounce 1.2s infinite;
+    }
 }
 
 
+
+
+@keyframes arrowBounce {
+    0% {
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
 
 
 @keyframes typerAnimation {
