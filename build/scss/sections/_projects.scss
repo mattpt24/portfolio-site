@@ -138,6 +138,10 @@
                 @media screen and (max-width: $tablet) {
                     font-size: 2rem;
                 }
+                @media screen and (max-width: $mobile) {
+                    opacity: 1;
+                    width: 90%;
+                }
             }
 
             a {
