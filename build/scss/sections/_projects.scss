@@ -119,12 +119,16 @@
                 height: 550px;
                 object-fit: cover;
                 object-position: center;
+                position: relative;
+                border-bottom: solid 8px $clr-primary;
+                filter: grayscale(100%);
                 @media screen and (max-width: $tablet) {
                     height: 500px;
                 }
                 @media screen and (max-width: $mobile) {
                     height: 350px;
                 }
+
             }
 
             h3 {
