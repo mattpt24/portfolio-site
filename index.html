@@ -47,19 +47,19 @@
         <div class="menu__container">
             <div class="menu__content">
             <ul>
-                <li><a href="#picture-text">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li class="nav-item-1"><a href="#picture-text">About Me</a></li>
+                <li class="nav-item-2"><a href="#projects">Projects</a></li>
+                <li class="nav-item-3"><a href="assets/files/Matt Persell-Thompson CV (2023).pdf" download>Experience</a></li>
+                <li class="nav-item-4"><a href="#contact">Contact</a></li>
             </ul>
 
             <div>
                 <h4>Connect With Me</h4>
                 <div class="social-container">
-                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href=""><i class="fa-brands fa-instagram"></i></a>
-                    <a href=""><i class="fa-brands fa-linkedin-in"></i></i></a>
-                    <a href=""><i class="fa-brands fa-github"></i></a>
+                    <a target="_blank" href="https://www.facebook.com/mpt95/"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a target="_blank" href="https://www.instagram.com/mattpt24/"><i class="fa-brands fa-instagram"></i></a>
+                    <a target="_blank" href="https://uk.linkedin.com/in/matt-persell-thompson-887903200"><i class="fa-brands fa-linkedin-in"></i></i></a>
+                    <a target="_blank" href="https://github.com/mattpt24"><i class="fa-brands fa-github"></i></a>
                 </div>
                 <h4>Get In Touch</h4>
                 <div class="contact-container">
@@ -95,12 +95,13 @@
 
     <!-- ABOUT ME SECTION -->
     <section id="picture-text">
-        <img data-aos="fade-left" data-aos-duration="5000" src="https://scontent-lhr8-1.xx.fbcdn.net/v/t39.30808-1/314366237_10224586953652747_5130146388566821305_n.jpg?stp=cp6_dst-jpg_p480x480&_nc_cat=110&ccb=1-7&_nc_sid=fe8171&_nc_ohc=I2j0dXERdNcAX_aj96t&_nc_ht=scontent-lhr8-1.xx&oh=00_AfB1Y9nn5Rpg1gn0V0Pft9rcEU5C6_tEAS1eabj6J3EhMA&oe=64FF37ED">
+        <img data-aos="fade-left" data-aos-duration="5000" src="assets/images/me-blue2.png">
         <div data-aos="fade-right" class="picture-text-content">
             <h4 class="about__title">ABOUT ME</h4>
             <h2 class="about__intro">Thanks for checking out my site! I'm <span class="handwritten-txt">Matt,</span> a self taught Web Developer based in <span class="handwritten-txt">London, UK.</span></h2>
-            <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dolor magna, suscipit vitae dapibus vel, faucibus sed est. Curabitur fringilla maximus nibh vel mattis. Vivamus nec turpis eu turpis vulputate rhoncus eu ac nisl.</p>
-
+            <p class="about__text">Thanks for checking out my site! I'm Matt, a self taught Web Developer based in London. My coding journey began during the first lockdown of the COVID-19 Pandemic after a lifetime interest in all things tech. It changed my life and has become an immense passion of mine.</p>
+            <p class="about__text">I am primarily focused on client side web development and love expressing my creativity and working in a team of like minded people! I'm also in an indie/folk duo with my twin brother and love pizza.</p>
+            <p class="about__text"><strong>Some of the technologiesi've worked with include:</strong></p>
             <div class="skills-container">
                 <div class="skill red">HTML</div>
                 <div class="skill blue">CSS</div>
@@ -114,7 +115,7 @@
                 <div class="skill photoshop">Photoshop</div>
             </div>
 
-            <a class="btn btn--light" download>Download CV</a>
+            <a class="btn btn--light" href="assets/files/Matt Persell-Thompson CV (2023).pdf" download>Download CV</a>
         </div>
     </section>
     <!--  -->
@@ -225,8 +226,101 @@
             </div>
         </section>
         <!--  -->
-    
 
+
+
+
+
+
+
+
+
+
+        <section id="contact">
+            <div class="contact-column">
+                <div class="contact-content">
+                <h4>Contact</h4>
+                <h2 class="">Get in touch.</h2>
+                <p class="contact-subtitle">Currently not seeking any new opportunities but inbox is always open to questions or if you just want to say hi! I'll try my best to get back to you asap.</p>
+                <div class="social__container">
+                    <ul>
+                        <li><a href="tel:07557335725"><i class="fa-solid fa-phone"></i></a></li>
+                        <li><a href="mailto:mattypt@hotmail.co.uk"><i class="fa-solid fa-envelope"></i></a></li>
+                        <li><a target="_blank" href="https://www.facebook.com/mpt95/"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a target="_blank" href="https://www.instagram.com/mattpt24/"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a target="_blank" href="https://uk.linkedin.com/in/matt-persell-thompson-887903200"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                        <li><a target="_blank" href="https://github.com/mattpt24"><i class="fa-brands fa-github"></i></a></li>
+                    </ul>
+                </div>
+                <hr>
+                <div class="form_main_container">
+                    <h3>Have a <span class="handwritten-txt">question?</span>&nbsp; Send me a message</h3>
+                    <p class="contact-subtitle">Currently not seeking any new opportunities but inbox is always open to questions or if you just want to say hi! I'll try my best to get back to you asap.</p>
+                    <form autocomplete="off" action="https://formsubmit.co/mattypt@hotmail.co.uk" method="POST">
+                        <input type="text" name="First Name" required placeholder="Full Name" />
+                        <input type="email" name="Email" required placeholder="Email" />
+                        <textarea type="textarea" name="Message" required placeholder="Your message..."></textarea>
+                        <button className="btn btn-dark" type="submit"><a>Send Message</a></button>
+                    </form>
+                </div>
+                <div class="past-site">View my previous personal websites<span class="material-symbols-outlined">history</span></div>
+                </div>
+            </div>
+            <div class="contact-column">
+                <img src="assets/images/me2.jpeg" alt="">
+            </div>
+        </section>
+
+
+
+        <div class="past-sites__container">
+
+            <div class="close-modal"><span class="material-symbols-outlined">close</span></div>
+
+            <h2>Go back in <span class="handwritten-txt">time</span></h2>
+
+
+            <div class="past-site-images">
+
+                <div class="past-site site-1">
+                    <img src="assets/images/personal-site4.png" alt="">
+                    <div class="past-site-text">
+                        <h3><span>version<br></span>1</h3>
+                        <a class="btn btn--dark" href="https://mattpt24.github.io/firsteverwebsite/">View site</a>
+                    </div>
+                    </div>
+
+                    <div class="past-site site-2">
+                        <img src="assets/images/personal-site1.png" alt="">
+                        <div class="past-site-text">
+                            <h3><span>version<br></span>2</h3>
+                            <a class="btn btn--dark" href="https://mattpt24.github.io/old-personal-site-1/#">View site</a>
+                        </div>
+                    </div>
+
+
+                    <div class="past-site site-3">
+                        <img src="assets/images/personal-site2.png" alt="">
+                        <div class="past-site-text">
+                            <h3><span>version<br></span>3</h3>
+                            <a class="btn btn--dark" href="https://mattpt24.github.io/old-personal-site-2/">View site</a>
+                        </div>
+                    </div>
+
+
+
+                    <div class="past-site site-4">
+                        <img src="assets/images/personal-site3.png" alt="">
+                        <div class="past-site-text">
+                            <h3><span>version<br></span>4</h3>
+                            <a class="btn btn--dark" href="https://mattpt24.github.io/personalsite/#">View site</a>
+                        </div>
+                    </div>
+
+                
+            </div>
+        </div>
+    
 
 
 

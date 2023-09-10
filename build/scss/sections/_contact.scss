@@ -1,0 +1,249 @@
+#contact {
+    background: $clr-primary-darker;
+    display: flex;
+
+    @media screen and (max-width: $tablet) {
+        flex-direction: column-reverse;
+    }
+
+    .contact-column {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: left;
+        position: relative;
+        width: 50vw;
+        &:nth-child(2) {
+            background: $clr-primary;
+            position: relative;
+        }
+
+        @media screen and (max-width: $tablet) {
+            width: 100vw;
+        }
+
+
+        .past-site {
+            transition: all .4s ease;
+            padding: 1rem 1.4rem;
+            border-radius: 30px;
+            background: $clr-primary-lighter;
+            z-index: 100;
+            color: $clr-primary;
+            width: 370px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 2rem;
+            @media screen and (max-width: $mobile) {
+                width: 100%;
+                font-size: .8rem;
+            }
+            &:hover {
+                transition: all .4s ease;
+                background: $clr-secondary;
+                box-shadow: 0 0 10px $clr-secondary;
+                cursor: pointer;
+                color: white;
+            }
+            &:hover > span {
+                transition: all .4s ease;
+                transform: rotate(-360deg);
+                color: white;
+            }
+            span {
+                transition: all .4s ease;
+                color: $clr-primary;
+            }
+        }
+
+
+        .contact-content {
+            width: 70%;
+            margin: 0 auto;
+            padding: 6rem 0 4rem 0;
+            @media screen and (max-width: $tablet) {
+               width: 85%;
+               padding: 4rem 0 2rem 0;
+            }
+            @media screen and (max-width: $mobile) {
+                width: 90%;
+                padding: 3rem 0 2rem 0;
+            }
+            
+
+            h4 {
+                color: $clr-secondary;
+                letter-spacing: .4rem;
+                font-weight: 400;
+                text-transform: uppercase;
+            }
+            h2 {
+                color: white;
+                font-size: 3.8rem;
+                font-weight: 500;
+                margin: 1rem 0 1.4rem 0;
+                @media screen and (max-width: $laptop) {
+                    font-size: 3.4rem;
+                }
+                @media screen and (max-width: $mobile) {
+                    font-size: 3rem;
+                }
+            }
+            p {
+                opacity: .5;
+                width:80%;
+                color: white;
+                @media screen and (max-width: $laptop) {
+                    font-size: .9rem;
+                }
+                @media screen and (max-width: $mobile) {
+                    width: 100%;
+                }
+            }
+
+            hr {
+                border: solid 1px $clr-primary;
+                margin: 2rem 0 2rem 0;
+                opacity: 1;
+            }
+
+
+
+
+
+
+            .social__container {
+                display: flex;
+                gap: 1rem;
+                margin-top: 2rem;
+                ul {
+                    transition: all .4s ease;
+                    display: flex;
+                    gap: 1.6rem;
+                    list-style: none;
+                    li {
+                        transition: all .4s ease;
+                        a {
+                            i {
+                                color: white;
+                                font-size: 1.4rem;
+                            }
+                        }
+                    }
+                }
+
+                ul:hover li {
+                    transition: all .4s ease;
+                    opacity: .3;
+                }
+                ul li:hover {
+                    transition: all .4s ease;
+                    opacity: 1;
+                    color: $clr-secondary;
+                }
+            }
+
+
+
+
+
+
+            .form_main_container {
+                margin-top: 2rem;
+
+                p {
+                    margin: 1.4rem 0 1.4rem 0;
+                }
+                h3 {
+                    color: white;
+                    font-size: 2rem;
+                    font-weight: 500;
+                }
+                form {
+                    display: flex;
+                    flex-direction: column;
+                    gap: .2rem;
+                    width: 65%;
+                    margin-top: 1.2rem;
+                    @media screen and (max-width: $mobile) {
+                        width: 100%;
+                    }
+
+                    input, textarea {
+                        transition: all .4s ease;
+                        padding: 1rem;
+                        background: $clr-primary;
+                        outline: none;
+                        border: solid 2px $clr-primary;
+                        color: white;
+                        font-family: $ff-main;
+                        border-radius: 7px;
+                        &:focus {
+                            background: #1c9898;
+                        }
+                    }
+
+                    input[type="text"]::placeholder,
+                    input[type="email"]::placeholder {
+                        color: white;    
+                    }
+
+
+                    textarea {
+                        height: 170px;
+                        resize: none;
+                        &::-webkit-input-placeholder {
+                            color: white!important;
+                        }
+                    }
+
+                    button {
+                        transition: all .4s ease;
+                        text-align: center;
+                        padding: 1rem 0;
+                        border-radius: 7px;
+                        outline: none;
+                        border: solid 2px white;
+                        font-family: $ff-main;
+                        background: $clr-secondary;
+                        border-color: $clr-secondary;
+                        color: white;
+                        cursor: pointer;
+                        &:hover {
+                            transition: all .4s ease;
+                            border: solid 2px white;
+                            background: white;
+                            color: $clr-primary;
+                        }
+                    }
+                }
+            }
+
+        }
+
+
+
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+            width: 100%;
+            height: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center center;
+            @media screen and (max-width: $tablet) {
+                height: 35vh;
+                position: relative;
+            }
+        }
+    }
+}
+
+
+
+

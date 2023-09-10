@@ -58,6 +58,7 @@
     font-weight: 300;
     line-height: 1.6;
     color: white;
+    margin: 1rem 0;
 }
 
 
@@ -190,7 +191,8 @@ a {
     }
     #picture-text img {
         width: 90vw;
-        height: 300px;
+        height: 400px;
+        box-shadow: 7px 7px 0 $clr-primary;
     }
     .picture-text-content {
     width: 90%;

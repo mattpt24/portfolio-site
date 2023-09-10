@@ -117,7 +117,7 @@ header {
             flex-direction: column;
             padding: 4rem 0 2rem 0;
             @media screen and (max-width: $mobile) {
-                width: 85%;
+                width: 90%;
                 padding: 5rem 0 3rem 0;
             }
 
@@ -125,13 +125,14 @@ header {
                 list-style: none;
 
                 li {
+                    opacity: 0;
                     a {
                         transition: all .4s ease;
                         color: $clr-primary;
                         font-weight: 500;
                         font-size: 3rem;
                         @media screen and (max-width: $mobile) {
-                            font-size: 2.4rem;
+                            font-size: 2.3rem;
                             text-align: left;
                         }
                         &:hover {
@@ -151,6 +152,9 @@ header {
                 letter-spacing: .2rem;
                 text-transform: uppercase;
                 margin-bottom: 1rem;
+                @media screen and (max-width: $mobile) {
+                    font-size: .9rem;
+                }
             }
 
 
@@ -161,6 +165,8 @@ header {
                 margin-bottom: 2rem;
                 @media screen and (max-width: $mobile) {
                     gap: 0;
+                    position: relative;
+                    right: .6rem;
                 }
 
                 a {
@@ -172,10 +178,17 @@ header {
                     align-items: center;
                     background: $clr-primary;
                     border-radius: 100%;
+                    @media screen and (max-width: $mobile) {
+                        width: 40px;
+                        height: 40px;
+                    }
 
                     i {
                         color: $clr-primary-lighter;
                         font-size: 1.2rem;
+                        @media screen and (max-width: $mobile) {
+                            font-size: 1rem;
+                        }
                     }
 
                     &:hover {
@@ -197,6 +210,9 @@ header {
                     font-size: 1.2rem;
                     @media screen and (max-width: $mobile) {
                         text-align: left;
+                        font-size: 1.1rem;
+                        position: relative;
+                        right: .6rem;
                     }
 
                     &:hover {
