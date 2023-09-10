@@ -1,6 +1,7 @@
 #contact {
     background: $clr-primary-darker;
     display: flex;
+    overflow: hidden;
 
     @media screen and (max-width: $tablet) {
         flex-direction: column-reverse;
