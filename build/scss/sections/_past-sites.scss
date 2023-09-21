@@ -23,6 +23,9 @@
         right: 0;
         padding: 1rem;
         background: $clr-secondary;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         color: white;
         cursor: pointer;
 

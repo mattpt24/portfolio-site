@@ -31,7 +31,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 2rem;
+        gap: 3rem;
         flex-wrap: wrap;
         width: 70vw;
         padding-top: 4rem;
@@ -79,7 +79,7 @@
 
             &:hover > img {
                 transition: all .4s ease;
-                filter: grayscale(0);
+                // filter: grayscale(0);
             }
             &:hover {
                 transition: all .4s ease;
@@ -121,7 +121,7 @@
                 object-position: center;
                 position: relative;
                 border-bottom: solid 8px $clr-primary;
-                filter: grayscale(100%);
+                // filter: grayscale(100%);
                 @media screen and (max-width: $tablet) {
                     height: 500px;
                 }
@@ -165,6 +165,11 @@
                     display: block;
                     width: 100%;
                     margin-top: 1rem;
+                }
+                &:hover {
+                    transition: all .4s ease;
+                    background: white!important;
+                    color: $clr-primary;
                 }
             }
 
