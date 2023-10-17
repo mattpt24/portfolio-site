@@ -76,3 +76,32 @@ a {
 .color-txt {
   color: $clr-secondary;
 }
+
+
+.to-top-btn {
+  transition: all .5s ease;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background: $clr-secondary;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: .5rem .6rem;
+  z-index: 999;
+
+  @media screen and (max-width: $mobile) {
+    display: none;
+  }
+
+  &:hover {
+    transition: all .5s ease;
+    opacity: .7;
+  }
+
+  span {
+    font-size: 2.1rem;
+    color: white;
+    z-index: 990;
+  }
+}

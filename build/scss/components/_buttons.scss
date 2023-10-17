@@ -39,7 +39,7 @@
     background: none;
     color: $clr-primary;
     border-color: $clr-primary;
-    color: white;
+    color: $clr-primary;
     &:hover {
         transition: all .5s ease;
         background: $clr-secondary;

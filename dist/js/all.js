@@ -68,3 +68,8 @@ window.addEventListener("scroll", function () {
   var offset = window.scrollY;
   parallax.style.backgroundPositionY = offset * 0.5 + "px";
 });
+var parallax2 = document.querySelector("#projects");
+window.addEventListener("scroll", function () {
+  var offset2 = window.scrollY;
+  parallax2.style.backgroundPositionY = offset2 * 0.5 + "px";
+});

@@ -18,6 +18,13 @@
         h4 {
             color: $clr-secondary;
             letter-spacing: .4rem;
+
+            @media screen and (max-width:$mobile) {
+                text-align: left;
+                width: 90vw;
+                margin: 1rem auto 1.4rem auto;
+            }
+
         }
 
         h2 {
@@ -25,6 +32,13 @@
             font-weight: 700;
             font-size: 2.6rem;
             text-align: center;
+
+            @media screen and (max-width:$mobile) {
+                text-align: left;
+                width: 90vw;
+                margin: 0 auto;
+                font-size: 2.2rem;
+            }
         }
     }
 
@@ -188,7 +202,7 @@
 
     ul:hover li {
         transition: all .4s ease;
-        opacity: .2;
+        opacity: .675;
     }
 
     ul li:hover {
