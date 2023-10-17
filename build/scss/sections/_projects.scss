@@ -1,5 +1,5 @@
 #projects {
-    background:#0F6565;
+    background:#060917;
 
     .section-titles {
         padding: 4rem 0 4rem 0;
@@ -17,8 +17,8 @@
         }
 
         h2 {
-            color: white;
-            font-weight: 500;
+            color: $clr-primary;
+            font-weight: 700;
             font-size: 2.6rem;
             text-align: center;
         }
@@ -79,6 +79,7 @@
 
             &:hover > img {
                 transition: all .4s ease;
+                border-color: $clr-secondary;
                 // filter: grayscale(0);
             }
             &:hover {
@@ -88,7 +89,7 @@
             &:hover > .project-card__text h3 {
                 transition: all .4s ease;
                 // margin-top: 0;
-                opacity: 1;
+                color: white;
             }
 
             &:hover > .project-card__text {
@@ -120,7 +121,7 @@
                 object-fit: cover;
                 object-position: center;
                 position: relative;
-                border-bottom: solid 8px $clr-primary;
+                border-bottom: solid 4px $clr-primary;
                 // filter: grayscale(100%);
                 @media screen and (max-width: $tablet) {
                     height: 500px;
@@ -133,10 +134,9 @@
 
             h3 {
                 transition: all .4s ease;
-                color: white;
-                opacity: .6;
+                color: $clr-primary;
                 font-size: 2.4rem;
-                font-weight: 400;
+                font-weight: 700;
                 margin: 2rem 0 .5rem 0;
                 width: 80%;
                 @media screen and (max-width: $tablet) {
@@ -153,7 +153,7 @@
                 color: white;
                 font-weight: 200;
                 font-size: 1rem;
-                background: teal;
+                background: $clr-secondary;
                 text-align: center;
                 margin-top: .5rem;
                 padding: .6rem 1.2rem;
@@ -168,8 +168,7 @@
                 }
                 &:hover {
                     transition: all .4s ease;
-                    background: white!important;
-                    color: $clr-primary;
+                    opacity: .6;    
                 }
             }
 

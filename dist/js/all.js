@@ -52,3 +52,9 @@ closePastSitesModal.addEventListener("click", function () {
 // site3.classList.remove("entrance-3");
 // site4.classList.remove("entrance-4");
 // });
+
+var parallax = document.querySelector(".pattern-section");
+window.addEventListener("scroll", function () {
+  var offset = window.scrollY;
+  parallax.style.backgroundPositionY = offset * 0.5 + "px";
+});

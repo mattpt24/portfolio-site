@@ -36,12 +36,9 @@
 
 .btn--light {
     transition: all .5s ease;
-    background: #00808040;
-    border-color: teal;
-    color: teal;
-    background: none;
-    border-color: white;
-    color: white;
+    background: $clr-primary-lighter;
+    border-color: $clr-primary-lighter;
+    color: $clr-primary;
 }
 
 .full-stop {
@@ -53,7 +50,7 @@
 
 .btn--light:hover {
     transition: all .5s ease;
-    background: $clr-primary-lighter;
-    border-color: $clr-primary-lighter;
-    color: $clr-primary;
+    background: $clr-primary;
+    border-color: $clr-primary;
+    color: $clr-primary-darker;
 }

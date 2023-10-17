@@ -5,7 +5,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(5, 89, 89, 0.788);
+    background: #080d2099;
     backdrop-filter: blur(10px);
     z-index: 999;
     display: flex;
@@ -53,8 +53,8 @@
 
 
     h2 {
-        color: white;
-        font-weight: 500;
+        color: $clr-primary;
+        font-weight: 700;
         font-size: 3rem;
         margin-bottom: 2rem;
         @media screen and (max-width: $tablet) {

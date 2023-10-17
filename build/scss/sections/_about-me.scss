@@ -1,11 +1,7 @@
 /*MAIN CONTAINER*/
 #picture-text {
     position: relative;
-    background: $clr-primary-darker;
-    background: rgb(1,114,114);
-    background: linear-gradient(341deg, rgba(1,114,114,1) 51%, rgba(0,128,128,1) 51%);
-    background: rgb(0,102,102);
-    background: linear-gradient(341deg, rgba(0,102,102,1) 50%, rgba(1,114,114,1) 50%);
+    background:#060917;;
     padding: 4rem 0 4rem 0;
     gap: 2rem;
     display: flex;
@@ -25,14 +21,13 @@
     border-radius: 5px;
     object-fit: cover;
     object-position: center center;
-    box-shadow: 15px 15px 0 $clr-primary;
+    box-shadow: 15px 15px 0 $clr-primary-darker;
 }
-
 
 
 /*TEXT CONTAINER*/
 .picture-text-content {
-    width: 50ch;
+    width: 55ch;
 }
 
 
@@ -48,16 +43,16 @@
 .picture-text-content h2 {
     font-size: 2.8rem;
     margin: 1rem 0;
-    font-weight: 500;
-    color: white;
+    font-weight: 700;
+    color: $clr-primary;
 }
 
 /*PARAGRAPH TEXT*/
 .picture-text-content p {
     opacity: .6;
-    font-weight: 300;
+    font-weight: 200;
     line-height: 1.6;
-    color: white;
+    color: $clr-primary;
     margin: 1rem 0;
 }
 
@@ -80,7 +75,7 @@ a {
     width: 90%;
     flex-wrap: wrap;
     padding:1.2rem;
-    background: #06929254;
+    background: #0a0e23;
     border-radius: 15px;
     margin: 1rem 0 3rem 0;
     @media screen and (max-width: $tablet) {

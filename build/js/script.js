@@ -63,3 +63,10 @@ site4.classList.remove("entrance-4");
 // site3.classList.remove("entrance-3");
 // site4.classList.remove("entrance-4");
 // });
+
+
+const parallax = document.querySelector(".pattern-section");
+window.addEventListener("scroll", () => {
+    let offset = window.scrollY;
+        parallax.style.backgroundPositionY = offset * 0.5 + "px";
+    });

@@ -1,5 +1,5 @@
 #contact {
-    background: $clr-primary-darker;
+    background: #060917;
     display: flex;
     overflow: hidden;
 
@@ -81,9 +81,9 @@
                 text-transform: uppercase;
             }
             h2 {
-                color: white;
+                color: $clr-primary;
                 font-size: 3.8rem;
-                font-weight: 500;
+                font-weight: 700;
                 margin: 1rem 0 1.4rem 0;
                 @media screen and (max-width: $laptop) {
                     font-size: 3.4rem;
@@ -93,9 +93,9 @@
                 }
             }
             p {
-                opacity: .5;
+                opacity: .7;
                 width:80%;
-                color: white;
+                color: $clr-primary;
                 @media screen and (max-width: $laptop) {
                     font-size: .9rem;
                 }
@@ -105,7 +105,7 @@
             }
 
             hr {
-                border: solid 1px $clr-primary;
+                border: solid .8px rgba(255, 255, 255, 0.213);
                 margin: 2rem 0 2rem 0;
                 opacity: 1;
             }
@@ -128,7 +128,7 @@
                         transition: all .4s ease;
                         a {
                             i {
-                                color: white;
+                                color: $clr-primary;
                                 font-size: 1.4rem;
                             }
                         }
@@ -158,9 +158,9 @@
                     margin: 1.4rem 0 1.4rem 0;
                 }
                 h3 {
-                    color: white;
-                    font-size: 2rem;
-                    font-weight: 500;
+                    color: $clr-primary;
+                    font-size: 1.8rem;
+                    font-weight: 700;
                 }
                 form {
                     display: flex;
@@ -175,28 +175,30 @@
                     input, textarea {
                         transition: all .4s ease;
                         padding: 1rem;
-                        background: $clr-primary;
+                        background: none;
                         outline: none;
-                        border: solid 2px $clr-primary;
-                        color: white;
+                        border: none;
+                        border-bottom: solid 1px rgba(255, 255, 255, 0.2);
+                        color: $clr-primary;
                         font-family: $ff-main;
-                        border-radius: 7px;
                         &:focus {
-                            background: #1c9898;
+                            background: #080d20;
+                            border-color: $clr-primary;
                         }
                     }
 
                     input[type="text"]::placeholder,
                     input[type="email"]::placeholder {
-                        color: white;    
+                        color: $clr-primary; 
                     }
 
 
                     textarea {
                         height: 170px;
                         resize: none;
+                        margin-bottom: 1    .2rem;
                         &::-webkit-input-placeholder {
-                            color: white!important;
+                            color: $clr-primary!important;
                         }
                     }
 
@@ -214,9 +216,7 @@
                         cursor: pointer;
                         &:hover {
                             transition: all .4s ease;
-                            border: solid 2px white;
-                            background: white;
-                            color: $clr-primary;
+                            opacity: .6;
                         }
                     }
                 }

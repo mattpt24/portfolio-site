@@ -2,20 +2,42 @@
     // padding: 14rem 0 8rem 0;
     height: 100vh;
     display: flex;
+    position: relative;
         justify-content: center;
-        align-items: center;
-        text-align: center;
         flex-direction: column;
-        background: rgb(164,209,209);
-    background: linear-gradient(163deg, rgba(164,209,209,1) 50%, rgba(0,128,128,1) 50%);
+        background: #060917;
     @media screen and (max-width: $mobile) {
         padding: 8rem 0 0 0;
         height: 95vh;
     }
 
 
+    .pattern-section {
+        position: absolute;
+        pointer-events: none;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 70vw;
+        background-color: #070917;
+opacity: 1;
+background-image: radial-gradient(#131a3a 2px, #070917 2px);
+background-size: 40px 40px;
+    }
+
+    .hero-content {
+        width: 80vw;
+        margin: 2rem auto;
+        z-index: 1;
+
+        @media screen and (max-width: $mobile) {
+            width: 90vw;
+        }
+    }
+
+
     .hero__small-text {
-        color: teal;
+        color: $clr-primary;
         border-radius: 30px;
         text-transform: uppercase;
         letter-spacing: .3rem;
@@ -37,12 +59,11 @@
     }
 
     .hero__title {
-        color: #222;
-        color: white;
+    color: $clr-primary;
         font-size: 4rem;
         width: 20ch;
-        font-weight: 500;
-        margin: 2rem auto 1.4rem auto;
+        font-weight: 700;
+        margin: 2rem 0 1.4rem 0;
         opacity: 0;
         animation: heroAnimation 1s ease;
         animation-fill-mode: forwards;
@@ -55,13 +76,13 @@
         }
         @media screen and (max-width: $mobile) {
             width: 90vw;
-            font-size: 2.8rem;
+            font-size: 2.6rem;
             text-align: left;
         }
 
         .typer {
             animation: typerAnimation .8s infinite;
-            font-weight: 200;
+            font-weight: 100;
         }
     }
 
@@ -71,11 +92,12 @@
         font-weight: 500;
         opacity: .7;
         font-size: 1.2rem;
-        color: white;
+        color: $clr-primary;
         opacity: 0;
         animation: heroAnimation 1s ease;
         animation-fill-mode: forwards;
         animation-delay: .75s;
+        font-weight: 200;
 
         @media screen and (max-width: $mobile) {
             width: 90vw;
@@ -87,7 +109,6 @@
 
     .hero__btn-container {
         display: flex;
-        justify-content: center;
         gap: 1rem;
         margin-top: 2rem;
         opacity: 0;
@@ -96,7 +117,7 @@
         animation-delay: 1s;
 
         @media screen and (max-width: $mobile) {
-            width: 100vw;
+            width: 90vw;
             flex-direction: column;
             gap: .5rem;
         }
@@ -109,6 +130,9 @@
         opacity: .5;
         margin-top: 2rem;
         animation: arrowBounce 1.2s infinite;
+        @media screen and (max-width: $mobile) {
+            display: none;
+        }
     }
 }
 
