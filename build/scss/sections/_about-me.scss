@@ -21,7 +21,6 @@
     border-radius: 5px;
     object-fit: cover;
     object-position: center center;
-    box-shadow: 15px 15px 0 $clr-primary-darker;
 }
 
 
@@ -160,13 +159,15 @@ a {
 /*MOBILE*/
 @media screen and (max-width: $tablet) {
     #picture-text {
-        flex-direction: column;
+        flex-direction: column-reverse;
         padding: 0 0 4rem 0;
         gap: 0;
     }
     #picture-text img {
         width: 70vw;
-        height: 300px;
+        height: 450px;
+        object-position: top center;
+        margin-top: 3rem;
     }
     .picture-text-content {
     width: 70%;
@@ -187,7 +188,6 @@ a {
     #picture-text img {
         width: 90vw;
         height: 400px;
-        box-shadow: 7px 7px 0 $clr-primary;
     }
     .picture-text-content {
     width: 90%;

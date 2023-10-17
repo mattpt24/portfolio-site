@@ -4,7 +4,7 @@ header {
     left: 0;
     width: 100%;
     // padding: 1.2rem 0;
-    border-bottom: solid .5px $clr-primary;
+    border-bottom: solid .3px $clr-primary;
     z-index: 998;
     background: #060917;
 
@@ -20,7 +20,7 @@ header {
             font-weight: 500;
             color: $clr-primary;
             font-size: 1.6rem;
-            border-right: solid .5px $clr-primary;
+            border-right: solid .3px $clr-primary;
             padding: 1.5rem;
             display: flex;
             justify-content: center;
@@ -38,7 +38,7 @@ header {
 
         .nav__toggle-menu {
             transition: all .5s ease;
-            border-left: solid .5px $clr-primary;
+            border-left: solid .3px $clr-primary;
             display: flex;
             justify-content: center;
             align-items: center;
