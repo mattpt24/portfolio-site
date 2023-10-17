@@ -18,7 +18,13 @@
         top: 0;
         right: 0;
         height: 100%;
-        width: 70vw;
+        width: 60vw;
+        background-color: #070917;
+        // border-left: solid .2px $clr-secondary;
+        // border-bottom: solid .2px $clr-secondary;
+        // background-color: #070917;
+        // opacity: 1;
+        // background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #070917 40px ), repeating-linear-gradient( #131a3a55, #131a3a );
         background-color: #070917;
 opacity: 1;
 background-image: radial-gradient(#131a3a 2px, #070917 2px);

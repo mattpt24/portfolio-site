@@ -25,11 +25,25 @@
     transition: all .5s ease;
     background: $clr-secondary;
     border-color: $clr-secondary;
-    color: white;
+    color: $clr-primary;
     &:hover {
         background: none;
-        color: white;
-        border-color: white;
+        color: $clr-primary;
+        border-color: $clr-primary;
+    }
+}
+
+
+.btn--transparent {
+    transition: all .5s ease;
+    background: none;
+    color: $clr-primary;
+    border-color: $clr-primary;
+    color: white;
+    &:hover {
+        transition: all .5s ease;
+        background: $clr-secondary;
+        border-color: $clr-secondary;
     }
 }
 

@@ -65,6 +65,25 @@ site4.classList.remove("entrance-4");
 // });
 
 
+var navbar = document.querySelector("header");
+
+window.addEventListener("scroll", change);
+
+function change() {
+    var topOfPage = window.scrollY;
+    
+    if(topOfPage >= 100) {
+        navbar.classList.add("changed");
+    }
+
+    
+    else {
+        navbar.classList.remove("changed");
+    }
+}
+
+
+
 const parallax = document.querySelector(".pattern-section");
 window.addEventListener("scroll", () => {
     let offset = window.scrollY;

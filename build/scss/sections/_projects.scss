@@ -1,5 +1,9 @@
 #projects {
-    background:#060917;
+    background-color: #070917;
+    opacity: 1;
+    background-image:  radial-gradient(#131a3a 2px, transparent 2px), radial-gradient(#131a3a 2px, #070917 2px);
+    background-size: 80px 80px;
+    background-position: 0 0,40px 40px;
 
     .section-titles {
         padding: 4rem 0 4rem 0;

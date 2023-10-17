@@ -2,6 +2,7 @@
     background: #060917;
     display: flex;
     overflow: hidden;
+    border-top: solid .3px $clr-primary;
 
     @media screen and (max-width: $tablet) {
         flex-direction: column-reverse;
