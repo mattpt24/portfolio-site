@@ -25,7 +25,7 @@
     transition: all .5s ease;
     background: $clr-secondary;
     border-color: $clr-secondary;
-    color: $clr-primary;
+    color: white;
     &:hover {
         background: none;
         color: $clr-primary;
@@ -44,6 +44,7 @@
         transition: all .5s ease;
         background: $clr-secondary;
         border-color: $clr-secondary;
+        color: $clr-primary-darker;
     }
 }
 

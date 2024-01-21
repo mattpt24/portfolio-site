@@ -127,7 +127,7 @@ header {
             padding: 4rem 0 2rem 0;
             @media screen and (max-width: $mobile) {
                 width: 90%;
-                padding: 5rem 0 3rem 0;
+                padding: 3rem 0 3rem 0;
             }
 
             ul {
@@ -173,9 +173,11 @@ header {
                 align-items: center;
                 margin-bottom: 2rem;
                 @media screen and (max-width: $mobile) {
-                    gap: 0;
                     position: relative;
                     right: .6rem;
+                    width: 80%;
+                    gap: 0;
+                    margin-bottom: 4rem;
                 }
 
                 a {
@@ -224,6 +226,7 @@ header {
                         font-size: 1.1rem;
                         position: relative;
                         right: .6rem;
+                        width: 90%;
                     }
 
                     &:hover {
